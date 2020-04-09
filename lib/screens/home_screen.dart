@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         child: FutureBuilder(
-          future: _cryptoRepository.getCoins(page: _page),
+          future: _cryptoRepository.getTopCoins(page: _page),
           builder: (context, snapshot) {
             if (!snapshot.hasData) {
               return Center(

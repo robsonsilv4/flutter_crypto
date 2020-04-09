@@ -15,7 +15,7 @@ class CryptoRepository extends BaseCryptoRepository {
       : _httpClient = httpClient ?? http.Client();
 
   @override
-  Future<List<Coin>> getCoins({int page}) async {
+  Future<List<Coin>> getTopCoins({int page}) async {
     List<Coin> coins = [];
     String requestUrl =
         '$_baseUrl/data/top/totalvolfull?limit=$_perPage&tsym=USD&page=$page';
