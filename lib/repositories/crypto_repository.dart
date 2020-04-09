@@ -6,7 +6,7 @@ import '../models/coin_model.dart';
 import 'base_crypto_repository.dart';
 
 class CryptoRepository extends BaseCryptoRepository {
-  static const String _baseUrl = 'https://min-api.cryptocompare.con';
+  static const String _baseUrl = 'https://min-api.cryptocompare.com';
   static const int _perPage = 20;
 
   final http.Client _httpClient;
